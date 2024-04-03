@@ -1,0 +1,347 @@
+@media only screen and (max-width: 1500px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: unset;
+  }
+
+  .navbar {
+    display: none;
+  }
+  #logo {
+   z-index: 10;
+  max-width: 30%;
+  height: auto;
+  }
+
+  #consultus {
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #swipercontent {
+    width: 95vw;
+  }
+
+  #swipercontent img {
+    width: 100%;
+  }
+  #consultuscontent h1 {
+    font-size: 4vw;
+  }
+  #consultpara {
+    font-size: 7vw;
+    margin: 2vw 0 2vw 0;
+  }
+
+  #consultpara2 {
+    font-size: 3vw;
+    margin: 2vw 0 2vw 0;
+  }
+  #consultusbtn {
+    width: 30vw;
+    font-size: 4vw;
+    height: 10vw;
+    margin-top: 3vh;
+  }
+
+  #consultuscontent button {
+    margin-left: 35vw;
+  }
+  #rattings {
+    padding-top: 3vh;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  #rattings img {
+    width: 30vw;
+    height: auto;
+  }
+  #Deliveringour {
+    font-size: 2vw;
+  }
+
+  #solutions {
+    font-size: 4vw;
+    margin: 2.1vh 0 2.1vh 0;
+  }
+
+  #solutioncontent img {
+    width: 100vw;
+  }
+  #lottie-container {
+    height: auto !important;
+  }
+  #hassel {
+    font-size: 4vw;
+    margin: 2vh 0 2vh 0;
+  }
+
+  #hasselcontent img {
+    width: 20%;
+  }
+
+  .image2
+  {
+    margin-left: -1%;
+    margin-top: -8.5%;
+  }
+
+  .image3
+  {
+    margin-top: 1%;
+  }
+  .image4
+  {
+    margin-left: -2px;
+    margin-top: -10%;
+
+  }
+  .image5
+  {
+    margin-left: -2px;
+    margin-top: 5.3%;
+
+  }
+
+  #maindiv
+  {
+    height: auto;
+  }
+
+  #gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  #gallerymain {
+    padding-bottom: 3vh;
+  }
+  #gallerymain img {
+    width: 90vw;
+    height: 20vh;
+  }
+  #gallery2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #grid1,
+  #grid3,
+  #grid2,
+  #grid4 {
+    justify-self: center;
+    padding: 0;
+  }
+  #grid2 {
+    gap: 20px;
+  }
+  #galleryheading {
+    font-size: 5vw;
+    padding: 2vh 0 2vh 0;
+  }
+  #cardbuttons button {
+    width: 20vw;
+  }
+
+  #cardbuttons button img {
+    width: 18vw;
+  }
+  #cardimages {
+    padding-top: 3vh;
+  }
+  #card {
+    padding-top: 2ch;
+    padding-bottom: 3vh;
+  }
+  #cardheading {
+    margin-top: 1vh;
+    font-size: 4vw;
+  }
+  #cardcontent p {
+    font-size: 2vw;
+  }
+  #cardimages img {
+    width: 95vw;
+  }
+  #testimonial {
+    margin-top: 2vh;
+  }
+  #testimonial h3 {
+    font-size: 5vw;
+  }
+  #testimonialcontent {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #testimonialcontent img {
+    width: 76vw;
+    height: auto;
+  }
+
+  #locationandform {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  #form {
+    width: 100vw;
+    height: auto;
+  }
+
+  #getintouch {
+    margin-top: 3vh !important;
+    font-size: 6vw !important;
+  }
+
+  #location {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contactus {
+    margin-top: 2vh;
+    flex-direction: column-reverse;
+  }
+
+  #contactinfo {
+    width: 100vw;
+  }
+
+  #socialmedia {
+    margin-top: 3%;
+    width: 100%;
+  }
+  #contactinfo {
+    display: flex;
+    justify-content: center;
+  }
+  #contactinfo img {
+    width: 80%;
+  }
+
+  #contactus {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+  #icons {
+    justify-content: space-around;
+    margin-top: 2vh;
+  }
+  #icons a {
+    display: flex;
+    justify-content: center;
+  }
+
+  #consultation {
+    margin-top: 2vh;
+  }
+  #popupformmain
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  width: 350px;
+  height: 500px;
+  }
+  #popupformsub
+  {
+    width: 330px;
+    height:480px ;
+  }
+  #popupformcontent
+  {
+    margin-top: 25px;
+    font-size: 12px;
+  }
+  #checkbox
+  {
+    height: 20px;
+  }
+ 
+/* navbar  */
+
+
+#navbar2 {
+  display: block;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
+  padding-bottom: 5vh;
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.nav-list li {
+  float: left;
+}
+
+.nav-list li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  /* margin-right: 25px; */
+  float: right;
+}
+
+.menu-toggle img {
+  width: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .nav-list {
+    display: none;
+    clear: both;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.slick-next {
+  display: none !important;
+}
+
+
+#googlrating img 
+{
+  width: 28vw;
+}
+
+
+
+}

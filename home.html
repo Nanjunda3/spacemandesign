@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/home.css" />
+    <link rel="stylesheet" href="/assets/homemobile.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    <script src="./app.js"></script>
+    <style>
+      .img_box img {
+        max-width: 100%;
+      }
+      .slider_container .container {
+        padding-left: 2vw;
+        max-width: 95vw;
+        margin: 0 auto;
+      }
+      .card_slider {
+        padding: 30px 0px;
+      }
+
+
+  
+
+    </style>
+    <title>home</title>
+  </head>
+  <body>
+    <div id="navbar2">
+      <div class="menu-toggle" id="mobile-menu">
+        <img src="/assets/images/ham2.png" alt="no image" />
+      </div>
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/contactus.ejs">Our Solutions</a></li>
+        <a href="">Blogs</a>
+        <li><a href="locationnav">Gallery</a></li>
+        <li><a href="gallery">About Us</a></li>
+        <li><a href="why-us">Contact Us</a></li>
+        <!-- <button id="download3"><img src="./assets/images/download2.png" alt="no image" onclick="togglePopupForm()"></button> -->
+      </ul>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        mobileMenuButton.addEventListener("click", function () {
+          navList.style.display =
+            navList.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+
+    <img id="logo" src="/assets/images/logo.png" alt="logo" />
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a href="">Our Solutions</a>
+      <a href="">Blogs</a>
+      <a href="#locationhr">Gallery</a>
+      <a href="#trying">About Us</a>
+      <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
+    </div>
+    <div id="consultus">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("#swipercontent").slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          });
+        });
+      </script>
+      <div id="swipercontent">
+        <div>
+          <img src="/assets/images/consultustest.png" alt="Image 1" />
+        </div>
+        <div>
+          <img src="/assets/images/start2.png" alt="Image 2" />
+        </div>
+        <div>
+          <img src="/assets/images/start3.png" alt="Image 3" />
+        </div>
+        <div>
+          <img src="/assets/images/consultustest.png" alt="Image 4" />
+        </div>
+        <div>
+          <img src="/assets/images/start2.png" alt="Image 4" />
+        </div>
+        <div>
+          <img src="/assets/images/start3.png" alt="Image 4" />
+        </div>
+      </div>
+      <div id="consultuscontent">
+        <h1>#1 Commercial Interior Designers in Bengaluru.</h1>
+        <p id="consultpara">Pioneering Global Interior</p>
+        <p id="consultpara">Design Excellence,</p>
+        <p id="consultpara2">Spaceman Design provides you with access to</p>
+        <p id="consultpara2">
+          professional interior designers who have the expertise to
+        </p>
+        <p id="consultpara2">create the perfect design for your space.</p>
+
+        <a href="/contact"> <button id="consultusbtn">Consult Us</button></a>
+      </div>
+    </div>
+
+    <div id="rattings">
+      <a href="https://www.trustpilot.com/review/spacemandesigns.com"
+        ><img src="/assets/images/trustpilot.png" alt="trustpilot"
+      /></a>
+      <a
+        href="https://www.google.com/maps/place/Spaceman+Designs/@13.058048,77.6503296,12z/data=!4m6!3m5!1s0x3bae1765cbc89a3b:0xfad8d5ac1657443d!8m2!3d13.0622168!4d77.6495875!16s%2Fg%2F11jknt1y9s?entry=ttu"
+        id="googlrating"
+      >
+        <!-- <img src="/assets/images/google.png" alt="google review"/> -->
+        <div id="lottie-container1"></div>
+        <img src="/assets/images/googlerating.png" />
+      </a>
+      <img src="/assets/images/happy.png" alt="customer happy" />
+    </div>
+    <h3
+      style="text-align: center; padding-top: 5.4vw; margin: 0"
+      id="Deliveringour"
+    >
+      Delivering our promise to our esteemed clients
+    </h3>
+    <section class="slider_container">
+      <div class="container">
+        <div class="swiper card_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/accenture.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/oppo.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/yudiz.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/zeta.png" alt="Zeta Logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/reebok.png" alt="Reebok Logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/indiqube.png" alt="Indiqube Logo" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_box">
+                <img src="/assets/images/innoplcxus.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      var swiper = new Swiper(".card_slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 3,
+          },
+          480: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    </script>
+
+    <!-- solutions part start -->
+
+    <h3 id="solutions">Solutions - That Makes a Difference</h3>
+    <div id="solutioncontent">
+      <div id="solution1">
+        <div><img src="/assets/images/solution1.png" alt="solution" /></div>
+        <div id="lottie-container" style="width: 30vw; height: auto"></div>
+      </div>
+      <div id="solution2">
+        <div><img src="/assets/images/solution2.png" alt="solution" /></div>
+        <div id="lottie-container2" style="width: 30vw; height: auto"></div>
+      </div>
+      <div id="solution3">
+        <div><img src="/assets/images/solution3.png" alt="solution" /></div>
+        <div id="lottie-container3" style="width: 30vw; height: auto"></div>
+      </div>
+    </div>
+
+    <h3 id="hassel">Steps For Hassle free & Convenient Process</h3>
+    <div id="hasselcontent">
+      <div id="maindiv">
+        <div class="image-container">
+          <img src="/assets/images/up1.png" class="image" />
+          <img src="/assets/images/down1.png" class="image2" />
+          <img src="/assets/images/up22.png" class="image3" />
+          <img src="/assets/images/down2.png" class="image4" />
+          <img src="/assets/images/up3.png" class="image5" />
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery here  -->
+    <div id="gallerymain">
+      <h3 id="galleryheading">Gallery</h3>
+      <div id="gallery">
+        <div id="grid1">
+          <img src="/assets/images/gallery1.png" alt="no image" />
+        </div>
+        <div id="grid2">
+          <img src="/assets/images/gallery2.png" alt="no image" />
+          <img src="/assets/images/gallery3.png" alt="no image" />
+        </div>
+      </div>
+      <div id="gallery2">
+        <div id="grid3">
+          <img src="/assets/images/gallery4.png" alt="no image" />
+        </div>
+        <div id="grid4">
+          <img src="/assets/images/gallery5.png" alt="no image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- card start from here  -->
+
+    <div id="card">
+      <div id="cardcontent">
+        <h3 id="cardheading">Our Industry Expertise</h3>
+        <p>
+          Whether you are looking to enhance your current interior, or want a
+          standalone design
+        </p>
+        <p>which creates impressions.</p>
+        <p>
+          Thanks to our team's vast industry expertise, we have built a range of
+          proven in-house
+        </p>
+        <p>technology solutions, tailor-made for several industries.</p>
+      </div>
+      <div id="cardfunctionality">
+        <div id="cardbuttons">
+          <button id="button1">
+            <img
+              src="/assets/images/corporate.png"
+              alt=""
+              data-default-src="/assets/images/corporate.png"
+              data-hover-src="/assets/images/corporatechange.png"
+              data-click-src="/assets/images/corporatechange1.png"
+              data-image-src="/assets/images/corporatecontent.png"
+            />
+          </button>
+          <button id="button2">
+            <img
+              src="/assets/images/cafe.png"
+              alt=""
+              data-default-src="/assets/images/cafe.png"
+              data-hover-src="/assets/images/cafechange.png"
+              data-click-src="/assets/images/cafechange1.png"
+              data-image-src="/assets/images/cafecontent.png"
+            />
+          </button>
+          <button id="button3">
+            <img
+              src="/assets/images/hospital.png"
+              alt=""
+              data-default-src="/assets/images/hospital.png"
+              data-hover-src="/assets/images/hospitalchange.png"
+              data-click-src="/assets/images/hospitalchange1.png"
+              data-image-src="/assets/images/hospitalcontent.png"
+            />
+          </button>
+          <button id="button4">
+            <img
+              src="/assets/images/school.png"
+              alt=""
+              data-default-src="/assets/images/school.png"
+              data-hover-src="/assets/images/schoolchange.png"
+              data-click-src="/assets/images/schoolchange1.png"
+              data-image-src="/assets/images/schoolcontent.png"
+            />
+          </button>
+          <button id="button5">
+            <img
+              src="/assets/images/homeinterior.png"
+              alt=""
+              data-default-src="/assets/images/homeinterior.png"
+              data-hover-src="/assets/images/homeinteriorchange.png"
+              data-click-src="/assets/images/homeinteriorchange1.png"
+              data-image-src="/assets/images/homeinteriorcontent.png"
+            />
+          </button>
+        </div>
+        <div id="cardimages">
+          <img
+            id="image"
+            src="/assets/images/corporatecontent.png"
+            alt="no image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll("#cardbuttons button");
+      const image = document.getElementById("image");
+      let clickedButton = null;
+
+      // Function to set the default state for all buttons
+      function setDefaultState() {
+        buttons.forEach((btn) => {
+          btn.querySelector("img").src = btn
+            .querySelector("img")
+            .getAttribute("data-click-src");
+
+          if (index === 0) {
+            btn.click();
+          }
+        });
+      }
+
+      // Function to handle mouseenter event
+      function handleMouseEnter(button) {
+        const img = button.querySelector("img");
+        img.src = img.getAttribute("data-hover-src");
+      }
+
+      // Function to handle mouseleave event
+      function handleMouseLeave(button) {
+        if (button !== clickedButton) {
+          const img = button.querySelector("img");
+          img.src = img.getAttribute("data-default-src");
+        }
+      }
+
+      // Function to handle click event
+      function handleClick(button) {
+        buttons.forEach((btn) => {
+          const img = btn.querySelector("img");
+          if (btn === button) {
+            img.src = img.getAttribute("data-click-src");
+          } else {
+            img.src = img.getAttribute("data-default-src");
+          }
+        });
+
+        const img = button.querySelector("img");
+       
+
+        image.src = img.getAttribute("data-image-src");
+
+        // Set clickedButton and remove mouseleave listener for it
+        clickedButton = button;
+        button.removeEventListener("mouseleave", handleMouseLeave);
+      }
+
+      // Add event listeners to each button
+      buttons.forEach((button) => {
+        button.addEventListener("mouseenter", () => handleMouseEnter(button));
+        button.addEventListener("mouseleave", () => handleMouseLeave(button));
+        button.addEventListener("click", () => handleClick(button));
+      });
+
+      // Set default state when the page loads
+      window.addEventListener("load", setDefaultState);
+    </script>
+    <div id="testimonialparent">
+      <div id="testimonial">
+        <h3>
+          What the People Thinks <span><br /></span> About Us
+        </h3>
+
+        <div id="testimonialcontent">
+          <img src="/assets/images/content1.png" alt="quote mark" />
+          <img src="/assets/images/content2.png" alt="quote mark" />
+          <img src="/assets/images/content3.png" alt="quote mark" />
+        </div>
+      </div>
+    </div>
+
+    <!-- location and form starts here  -->
+    <div id="locationandform">
+      <div id="formmain">
+        <div id="form">
+          <h3
+            id="getintouch"
+            style="font-size: 56px; margin: 0; padding-left: 4%"
+          >
+            Get in <span style="color: #f9d26c">Touch</span>
+          </h3>
+          <p style="padding-bottom: 20px; padding-left: 4%">
+            Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+            molestie vel, ornare non id blandit netus.
+          </p>
+          <form action="/sendMail" method="post" id="mapform">
+            <input
+              type="text"
+              placeholder="Name*"
+              id="name"
+              name="name"
+              required
+            />
+            <input type="email" placeholder="Email" id="email" name="email" />
+            <input
+              type="tel"
+              placeholder="Phone Number*"
+              id="phone"
+              name="phone"
+              required
+            />
+            <select id="find-us" name="find-us">
+              <option value="" disabled hidden selected>
+                How did you find us?
+              </option>
+              <option value="search">Search Engine</option>
+              <option value="social">Social Media</option>
+              <option value="referral">Word of Mouth</option>
+              <option value="ad">Advertisement</option>
+            </select>
+            <input type="submit" id="submit" value="Send" class="sendbutton" />
+          </form>
+        </div>
+        <div id="contactimages">
+          <img src="/assets/images/phone.png" alt="phone icon" />
+          <img src="/assets/images/fax.png" alt="fax icon" />
+          <img src="/assets/images/email.png" alt="email icon" />
+        </div>
+      </div>
+      <div id="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5825618955732!2d77.64701257572408!3d13.062222012883648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1765cbc89a3b%3A0xfad8d5ac1657443d!2sSpaceman%20Designs!5e0!3m2!1sen!2sin!4v1710407216690!5m2!1sen!2sin"
+          width="1076"
+          height="800"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <a href="/contact"
+      ><div id="consultation">
+        <img src="/assets/images/consultation.png" alt="Consultation Image" />
+      </div>
+    </a>
+
+    <div id="contactus">
+      <div id="socialmedia">
+        <img id="footerlogo" src="/assets/images/logo.png" alt="Logo" />
+        <div id="icons">
+          <a
+            href="https://www.facebook.com/spacemandesignsofficial
+         "
+            target="_blank"
+          >
+            <img src="/assets/images/facebook.png" alt="Facebook Icon"
+          /></a>
+          <a href="">
+            <img src="/assets/images/twitter.png" alt="Twitter Icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/spaceman-designs/"
+            target="_blank"
+          >
+            <img src="/assets/images/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://www.instagram.com/spacemandesigns6/" target="_blank">
+            <img src="/assets/images/instagram.png" alt="Instagram Icon" />
+          </a>
+        </div>
+      </div>
+      <div id="contactinfo">
+        <img src="/assets/images/contactinfo.png" alt="Contact Info" />
+      </div>
+    </div>
+
+    <!-- popup form  -->
+    <div id="popupformmain1">
+      <div id="popupformmain">
+        <div id="popupformsub">
+          <div id="popupform">
+            <h3 id="formheading">
+              Connect With Our Designer <span><br /></span> To Get Started
+            </h3>
+            <form id="formbegin" action="/sendMail" method="post">
+              <div id="group1">
+                <input type="text" placeholder="Your Full Name" name="name" />
+                <input
+                  type="email"
+                  placeholder="Official Email id"
+                  name="email"
+                />
+              </div>
+              <div id="group2">
+                <input type="tel" placeholder="Contact No." name="phone" />
+                <input type="text" placeholder="City" name="city" />
+              </div>
+              <div id="requirements">
+                <select id="requirements" name="requirements">
+                  <option value="" disabled hidden selected>
+                    Requirements
+                  </option>
+                  <option value="Homedesign">Homedesign</option>
+                  <option value="Appartments">Appartments</option>
+                  <option value="Villa">Villa</option>
+                  <option value="others">others</option>
+                </select>
+              </div>
+              <div id="submit1">
+                <input
+                  type="submit"
+                  id="submit2"
+                  value="Submit"
+                  style="width: 43%"
+                />
+              </div>
+              <div id="checkbox">
+                <input type="checkbox" />
+                <p>
+                  By submitting this form, I agree to be contacted by a member
+                  of the <span><br /></span> Spaceman Designs team.
+                </p>
+              </div>
+            </form>
+          </div>
+          <div id="popupformcontent">
+            <p>
+              Craft Your Next Commercial Space<span><br /></span> with Spaceman
+              Designs, Your <span><br /></span> Interior Design Partner."
+            </p>
+            <a href="/contact">
+              <img src="/assets/images/reqcall.png" alt="no image"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Add submit event listener to the form
+          document.getElementById("formbegin").addEventListener("submit", function (event) {
+              event.preventDefault(); // Prevent the default form submission
+      
+              // Display a confirmation alert using SweetAlert2
+              Swal.fire({
+                  title: 'Thanks For your Intrest',
+                  text: 'We will contact you soon',
+                  icon: 'success',
+                  confirmButtonText: 'Ok'
+              }).then((result) => {
+                  // Check if the user confirmed the alert
+                  if (result.isConfirmed) {
+                      // If confirmed, submit the form
+                      this.submit();
+                  }
+              });
+          });
+      });
+      </script>
+  </body>
+</html>

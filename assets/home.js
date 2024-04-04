@@ -58,7 +58,7 @@ function handleClickOutside(event) {
 document.addEventListener('click', handleClickOutside);
 
 
-setInterval(displayPopupForm, 30000);
+setInterval(displayPopupForm, 50000);
 
 function startAnimation() {
   var images = document.querySelectorAll('.image, .image3, .image5');

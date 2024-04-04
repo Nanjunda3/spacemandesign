@@ -21,6 +21,10 @@
     flex-direction: column;
   }
 
+  #first-image-container {
+    width: 98vw;
+  }
+
   #swipercontent {
     width: 95vw;
   }
@@ -29,16 +33,21 @@
     width: 100%;
   }
   #consultuscontent h1 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
+
+ 
+
   #consultpara {
     font-size: 7vw;
     margin: 2vw 0 2vw 0;
+    line-height: normal;
   }
 
   #consultpara2 {
     font-size: 3vw;
     margin: 2vw 0 2vw 0;
+    line-height: normal;
   }
   #consultusbtn {
     width: 30vw;
@@ -240,9 +249,18 @@
     margin-top: 2vh;
   }
   #icons a {
+ 
+    width: 20%;
     display: flex;
     justify-content: center;
   }
+
+  #facebooklogo
+  {
+    height: 10vw;
+  }
+
+ 
 
   #consultation {
     margin-top: 2vh;
@@ -270,7 +288,12 @@
   {
     height: 20px;
   }
- 
+ #contactimages{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+
+
 /* navbar  */
 
 

@@ -9,7 +9,10 @@
     />
     <link rel="stylesheet" href="../assets/home.css" />
     <link rel="stylesheet" href="../assets/homemobile.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -24,6 +27,15 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/home.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
@@ -39,6 +51,8 @@
       .card_slider {
         padding: 30px 0px;
       }
+
+     
     </style>
     <title>home</title>
   </head>
@@ -54,7 +68,6 @@
         <li><a href="locationnav">Gallery</a></li>
         <li><a href="gallery">About Us</a></li>
         <li><a href="why-us">Contact Us</a></li>
-        <!-- <button id="download3"><img src="./assets/images/download2.png" alt="no image" onclick="togglePopupForm()"></button> -->
       </ul>
     </div>
     <script>
@@ -79,41 +92,56 @@
       <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
     </div>
     <div id="consultus">
+      <div class="owl-carousel owl-theme" id="first-image-container">
+        <div class="item">
+          <img src="../assets/images/consultustest.png" alt="Image 1" />
+        </div>
+        <div class="item">
+          <img src="../assets/images/start3.png" alt="Image 2" />
+        </div>
+        <div class="item">
+          <img src="../assets/images/start2.png" alt="Image 3" />
+        </div>
+        <div class="item">
+          <img src="../assets/images/consultustest.png" alt="Image 4" />
+        </div>
+        <div class="item">
+          <img src="../assets/images/start3.png" alt="Image 5" />
+        </div>
+        <div class="item">
+          <img src="../assets/images/start2.png" alt="Image 6" />
+        </div> 
+      </div>
+
+      <!-- Add jQuery -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <!-- Add Owl Carousel JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script>
         $(document).ready(function () {
-          $("#swipercontent").slick({
+          $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
             dots: true,
             autoplay: true,
-            autoplaySpeed: 3000,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 1,
+              },
+              1000: {
+                items: 1,
+              },
+            },
           });
         });
       </script>
-      <div id="swipercontent">
-        <div>
-          <img src="../assets/images/consultustest.png" alt="Image 1" />
-        </div>
-        <div>
-          <img src="../assets/images/start2.png" alt="Image 2" />
-        </div>
-        <div>
-          <img src="../assets/images/start3.png" alt="Image 3" />
-        </div>
-        <div>
-          <img src="../assets/images/consultustest.png" alt="Image 4" />
-        </div>
-        <div>
-          <img src="../assets/images/start2.png" alt="Image 4" />
-        </div>
-        <div>
-          <img src="../assets/images/start3.png" alt="Image 4" />
-        </div>
-      </div>
+
       <div id="consultuscontent">
         <h1>#1 Commercial Interior Designers in Bengaluru.</h1>
         <p id="consultpara">Pioneering Global Interior</p>
@@ -404,7 +432,6 @@
         });
 
         const img = button.querySelector("img");
-       
 
         image.src = img.getAttribute("data-image-src");
 
@@ -509,6 +536,7 @@
         <img id="footerlogo" src="../assets/images/logo.png" alt="Logo" />
         <div id="icons">
           <a
+            id="facebooklogo"
             href="https://www.facebook.com/spacemandesignsofficial
          "
             target="_blank"
@@ -578,7 +606,7 @@
                 <input type="checkbox" />
                 <p>
                   By submitting this form, I agree to be contacted by a member
-                  of the <span><br /></span> Spaceman Designs team.
+                  of the Spaceman Designs team.
                 </p>
               </div>
             </form>
@@ -588,7 +616,7 @@
               Craft Your Next Commercial Space<span><br /></span> with Spaceman
               Designs, Your <span><br /></span> Interior Design Partner."
             </p>
-            <a href="/contact">
+            <a href="/contact" id="requestacall">
               <img src="../assets/images/reqcall.png" alt="no image"
             /></a>
           </div>
@@ -598,25 +626,27 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-          // Add submit event listener to the form
-          document.getElementById("formbegin").addEventListener("submit", function (event) {
-              event.preventDefault(); // Prevent the default form submission
-      
-              // Display a confirmation alert using SweetAlert2
-              Swal.fire({
-                  title: 'Thanks For your Intrest',
-                  text: 'We will contact you soon',
-                  icon: 'success',
-                  confirmButtonText: 'Ok'
-              }).then((result) => {
-                  // Check if the user confirmed the alert
-                  if (result.isConfirmed) {
-                      // If confirmed, submit the form
-                      this.submit();
-                  }
-              });
+        // Add submit event listener to the form
+        document
+          .getElementById("formbegin")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Display a confirmation alert using SweetAlert2
+            Swal.fire({
+              title: "Thanks For your Intrest",
+              text: "We will contact you soon",
+              icon: "success",
+              confirmButtonText: "Ok",
+            }).then((result) => {
+              // Check if the user confirmed the alert
+              if (result.isConfirmed) {
+                // If confirmed, submit the form
+                this.submit();
+              }
+            });
           });
       });
-      </script>
+    </script>
   </body>
 </html>

@@ -26,6 +26,26 @@ html {
 #consultus {
   padding-top: 180px;
   display: flex;
+  justify-content: space-evenly;
+}
+
+.owl-nav
+{
+  display: none !important;
+}
+
+.owl-dots
+{
+  padding-top: 10px !important;
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: auto;
+}
+
+#first-image-container {
+  width: 38%;
 }
 
 #consultuscontent h1 {
@@ -284,7 +304,7 @@ html {
   width: 100%;
   margin-top: 7vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
 
 }
 
@@ -298,7 +318,14 @@ html {
 }
 #footerlogo
 {
-  width: 80%;
+  width: 60%;
+}
+
+#contactinfo
+{
+  display: flex;
+  justify-content: center;
+  width: 60%;
 }
 
 #icons
@@ -421,6 +448,22 @@ html {
   color: white;
   font-size: 16px;
 }
+#contactimages
+{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#contactimages img
+{
+  width: 25%;
+}
+
+#contactimages img:nth-child(3) {
+  width: 35% !important; 
+}
+
 
 #popupformmain
 {
@@ -428,7 +471,7 @@ html {
 }
 #popupformmain
 {
-  
+  z-index: 10;
   position: fixed;
   top: 20%;
   left: 35vw;
@@ -550,6 +593,12 @@ font-size: 20px;
 {
   margin-top: 15px;
   width: 97%;
+}
+
+#requestacall
+{
+  display: flex;
+  justify-content: center;
 }
 
 #popupformcontent p{

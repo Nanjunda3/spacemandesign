@@ -64,15 +64,20 @@ html {
 }
 
 #consultusbtn {
-  width: 320px;
-  height: 104px;
-  background-color: black;
+  width: 216px;
+  height: 63px;
+  background-color: #212121;
   color: white;
   border: none;
   border-radius: 15px;
-  font-size: 36px;
+  font-size: 30px;
   margin-top: 70px;
   cursor: pointer;
+}
+
+#consultusbtn:hover
+{
+  background-color: #F5CC2A;
 }
 
 #swipercontent {
@@ -118,19 +123,22 @@ html {
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  border: 1px solid black;
-  transform: scale(1.1);
-  color: black !important;
+  border-top: 2px solid #212121;
+  border-bottom: 2px solid #212121;
   font-weight: 550;
-  border-radius: 10px;
+ 
 }
 
 .rainbow-btn {
-  background-color: black;
+  background-color: #212121;
   margin-right: 4vw;
   border-radius: 10px;
   color: white !important;
+}
+
+.rainbow-btn:hover{
+  background-color: #F5CC2A;
+  border: none !important;
 }
 
 #rattings {
@@ -203,7 +211,7 @@ html {
 
 #googlrating img 
 {
-  width: 300px;
+  width: 380px;
 }
 
 #hassel {
@@ -503,7 +511,8 @@ html {
 
 #popupform input 
 {
-  width: 43%;
+  padding-left: 15px;
+  width: 40%;
   height: 35px;
   border-radius: 15px;
   border: none;
@@ -547,6 +556,7 @@ justify-content: space-around;
   height: 40px;
   border: none;
   font-size: 15px;
+  padding-left: 15px;
 }
 
 #submit1

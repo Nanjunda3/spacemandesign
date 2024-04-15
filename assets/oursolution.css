@@ -1,0 +1,46 @@
+#oussolutioncontent
+{
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+#howweworkheading
+{
+  margin: 2%;
+  font-size: 60px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#howweworkpara 
+{
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 2%;
+}
+
+#howweworkcontent
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#howweworkcontent img
+{
+  margin:2% 0 2% 0;
+  width: 60%;
+}
+
+
+
+
+#howweworkfooter
+{
+  margin: 2% 0 3% 0;
+  display: flex;
+  justify-content: center;
+}

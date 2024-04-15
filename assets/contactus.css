@@ -39,7 +39,7 @@ justify-content: center;
 
 #contactusimages
 {
-  /* padding-top: 30px; */
+ 
   height: 500px;
   width: 30%;
   display: flex;
@@ -66,6 +66,7 @@ justify-content: center;
  border-radius: 10px;
  border: 1px solid black;
  font-size: 24px;
+ padding-left: 15px;
 }
 
 #message
@@ -74,6 +75,7 @@ justify-content: center;
 border: 1px solid black;
 border-radius: 10px;
 font-size: 24px;
+padding-left: 15px;
 }
 
 #contactussubmit

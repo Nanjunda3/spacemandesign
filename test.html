@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Demo</title>
+    <style>
+        @keyframes sanjay {
+            0% {
+                transform: translateY(70px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        .galleryimage {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+
+        
+
+        #gallery1
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30%;
+            
+        }
+        #gallery1 img 
+        {
+            width: 100%;
+            
+        }
+
+
+        #gallery2
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30%;
+        }
+        #gallery2 img 
+        {
+            width: 100%;
+        }
+
+        .galleryimage img {
+            opacity: 0;
+        }
+
+        .gallery01 
+        {
+            opacity: 1 !important;
+        }
+
+        .gallery02 
+        {
+            opacity: 1 !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="galleryimage"> 
+        <div id="gallery1">
+            <img src="/assets/gallery/gallery01.jpg" class="gallery01 no-animate">
+            <img src="/assets/gallery/gallery03.jpg" class="gallery03">
+            <img src="/assets/gallery/gallery05.jpg" class="gallery05">
+            <img src="/assets/gallery/gallery07.jpg" class="gallery07">
+            <img src="/assets/gallery/gallery09.jpg" class="gallery09">
+            <img src="/assets/gallery/gallery19.jpg" class="gallery19">
+            <img src="/assets/gallery/gallery11.jpg" class="gallery11">
+            <img src="/assets/gallery/gallery13.jpg" class="gallery11">
+            <img src="/assets/gallery/gallery15.jpg" class="gallery15">
+            <img src="/assets/gallery/gallery17.jpg" class="gallery17">
+        </div>
+        <div id="gallery2">
+            <img src="/assets/gallery/gallery02.jpg" class="gallery02 no-animate">
+            <img src="/assets/gallery/gallery04.jpg" class="gallery04">
+            <img src="/assets/gallery/gallery06.jpg" class="gallery06">
+            <img src="/assets/gallery/gallery08.jpg" class="gallery08">
+            <img src="/assets/gallery/gallery10.jpg" class="gallery10">
+            <img src="/assets/gallery/gallery12.jpg" class="gallery12">
+            <img src="/assets/gallery/gallery20.jpg" class="gallery20">
+            <img src="/assets/gallery/gallery14.jpg" class="gallery14">
+            <img src="/assets/gallery/gallery16.jpg" class="gallery16">
+            <img src="/assets/gallery/gallery18.jpg" class="gallery18">
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery1Images = document.querySelectorAll("#gallery1 img:not(.no-animate)");
+            const gallery2Images = document.querySelectorAll("#gallery2 img:not(.no-animate)");
+            const scrollThresholds = [0, 200, 500, 700, 1200]; 
+
+            function animateImages(images) {
+                images.forEach(img => {
+                    img.style.animation = 'sanjay 2s forwards';
+                });
+            }
+
+            window.addEventListener('scroll', function() {
+                const currentScrollPos = window.scrollY;
+                console.log(currentScrollPos);
+                for (let i = 0; i < scrollThresholds.length; i++) {
+                    if (currentScrollPos >= scrollThresholds[i]) {
+                        animateImages([gallery1Images[i], gallery2Images[i]]);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

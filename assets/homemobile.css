@@ -15,7 +15,7 @@
   }
 
   #consultus {
-    padding-top: 10vh;
+    padding-top: 15vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -336,7 +336,8 @@
 }
 
 .menu-toggle img {
-  width: 50px;
+  padding-top: 5%;
+  width: 12vw;
 }
 
 @media screen and (max-width: 1500px) {

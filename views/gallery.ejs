@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+  />
+  <link rel="stylesheet" href="../assets/home.css" />
+  <link rel="stylesheet" href="../assets/homemobile.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="../assets/home.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.3/swiper-bundle.min.css">
+    <style>
+        @keyframes sanjay {
+            0% {
+                transform: translateY(70px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        .galleryimage {
+            padding-top: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+
+        
+
+        #gallery1
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30%;
+            
+        }
+        #gallery1 img 
+        {
+            width: 100%;
+            
+        }
+
+
+        #gallery2
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 30%;
+        }
+        #gallery2 img 
+        {
+            width: 100%;
+        }
+
+        .galleryimage img {
+            opacity: 0;
+        }
+
+        .gallery01 
+        {
+            opacity: 1 !important;
+        }
+
+        .gallery02 
+        {
+            opacity: 1 !important;
+        }
+        #popupGallery
+        {
+            position: fixed;
+            top: 1%;
+            left: 1%;
+        }
+
+        .swiper-container {
+            width: 100vw;
+            height: auto;
+        }
+
+        .swiper-wrapper
+        {
+            width: 80vw;
+            height: 500px;
+
+        }
+
+        /* Center Swiper slides */
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="navbar2">
+        <div class="menu-toggle" id="mobile-menu">
+          <img src="../assets/images/ham2.png" alt="no image" />
+        </div>
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/solution">Our Solutions</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="gallery">About Us</a></li>
+          <li><a href="why-us">Contact Us</a></li>
+        </ul>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenuButton = document.getElementById("mobile-menu");
+          const navList = document.querySelector(".nav-list");
+  
+          mobileMenuButton.addEventListener("click", function () {
+            navList.style.display =
+              navList.style.display === "block" ? "none" : "block";
+          });
+        });
+      </script>
+  
+      <img id="logo" src="../assets/images/logo.png" alt="logo" />
+      <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/solution">Our Solutions</a>
+        <a href="">Blogs</a>
+        <a href="/gallery">Gallery</a>
+        <a href="#testimonial">About Us</a>
+        <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
+      </div>
+
+    <div class="galleryimage"> 
+        <div id="gallery1">
+            <img src="/assets/gallery/gallery01.jpg" class="gallery01 no-animate">
+            <img src="/assets/gallery/gallery03.jpg" class="gallery03">
+            <img src="/assets/gallery/gallery05.jpg" class="gallery05">
+            <img src="/assets/gallery/gallery07.jpg" class="gallery07">
+            <img src="/assets/gallery/gallery09.jpg" class="gallery09">
+            <img src="/assets/gallery/gallery19.jpg" class="gallery19">
+            <img src="/assets/gallery/gallery11.jpg" class="gallery11">
+            <img src="/assets/gallery/gallery13.jpg" class="gallery11">
+            <img src="/assets/gallery/gallery15.jpg" class="gallery15">
+            <img src="/assets/gallery/gallery17.jpg" class="gallery17">
+        </div>
+        <div id="gallery2">
+            <img src="/assets/gallery/gallery02.jpg" class="gallery02 no-animate">
+            <img src="/assets/gallery/gallery04.jpg" class="gallery04">
+            <img src="/assets/gallery/gallery06.jpg" class="gallery06">
+            <img src="/assets/gallery/gallery08.jpg" class="gallery08">
+            <img src="/assets/gallery/gallery10.jpg" class="gallery10">
+            <img src="/assets/gallery/gallery12.jpg" class="gallery12">
+            <img src="/assets/gallery/gallery20.jpg" class="gallery20">
+            <img src="/assets/gallery/gallery14.jpg" class="gallery14">
+            <img src="/assets/gallery/gallery16.jpg" class="gallery16">
+            <img src="/assets/gallery/gallery18.jpg" class="gallery18">
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery1Images = document.querySelectorAll("#gallery1 img:not(.no-animate)");
+            const gallery2Images = document.querySelectorAll("#gallery2 img:not(.no-animate)");
+            const scrollThresholds = [0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000]; 
+
+            function animateImages(images) {
+                images.forEach(img => {
+                    img.style.animation = 'sanjay 2s forwards';
+                });
+            }
+
+            window.addEventListener('scroll', function() {
+                const currentScrollPos = window.scrollY;
+                console.log(currentScrollPos);
+                for (let i = 0; i < scrollThresholds.length; i++) {
+                    if (currentScrollPos >= scrollThresholds[i]) {
+                        animateImages([gallery1Images[i], gallery2Images[i]]);
+                    }
+                }
+            });
+        });
+    </script>
+
+
+<!-- <div id="popupGallery" style="display: none;">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+       
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div> -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.3/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const gallery1Images = document.querySelectorAll("#gallery1 img:not(.no-animate)");
+        const gallery2Images = document.querySelectorAll("#gallery2 img:not(.no-animate)");
+
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        function openPopupGallery(images, startIndex) {
+            
+            swiper.removeAllSlides();
+           
+            images.forEach((image, index) => {
+                swiper.appendSlide(`<div class="swiper-slide"><img src="${image.src}" alt="Image ${index + 1}"></div>`);
+            });
+          
+            swiper.slideTo(startIndex);
+            // Show the popup gallery
+            document.getElementById('popupGallery').style.display = 'block';
+        }
+
+        // Add click event listeners to images
+        gallery1Images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                openPopupGallery(gallery1Images, index);
+            });
+        });
+
+        gallery2Images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                openPopupGallery(gallery2Images, index);
+            });
+        });
+    });
+</script> -->
+
+
+       <a href="/contact"
+       ><div id="consultation">
+         <img src="../assets/images/consultation.png" alt="Consultation Image" />
+       </div>
+     </a>
+ 
+    <div id="contactus">
+        <div id="socialmedia">
+          <img id="footerlogo" src="../assets/images/logo.png" alt="Logo" />
+          <div id="icons">
+            <a
+              id="facebooklogo"
+              href="https://www.facebook.com/spacemandesignsofficial
+           "
+              target="_blank"
+            >
+              <img src="../assets/images/facebook.png" alt="Facebook Icon"
+            /></a>
+            <a href="">
+              <img src="../assets/images/twitter.png" alt="Twitter Icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/spaceman-designs/"
+              target="_blank"
+            >
+              <img src="../assets/images/linkedin.png" alt="LinkedIn Icon" />
+            </a>
+            <a href="https://www.instagram.com/spacemandesigns6/" target="_blank">
+              <img src="../assets/images/instagram.png" alt="Instagram Icon" />
+            </a>
+          </div>
+        </div>
+        <div id="contactinfo">
+          <img src="../assets/images/contactinfo.png" alt="Contact Info" />
+        </div>
+      </div>
+
+
+</body>
+</html>

@@ -27,7 +27,8 @@ console.log("node mailer is on");
            <p>City: ${city}</p>
            <p>Phone: ${phone}</p>
            <p>Email: ${email}</p>
-           <p>Requirement: ${requirements}</p>`
+           <p>Requirement: ${requirements}</p>
+           <p>Spaceman design website</P>`
   };
 
   // Send the email

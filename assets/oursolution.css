@@ -1,46 +1,95 @@
-#oussolutioncontent
-{
+#bannerimage {
+  width: 100vw;
+}
+
+#livingroomimage {
+  width: 100vw;
+}
+
+#oussolutioncontent {
+  width: 100vw;
+}
+
+#oussolutioncontent img {
+  width: 30%;
+}
+
+#howweworkfooter {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+#howweworkfooter img {
+  width: 90vw;
+}
+
+#oussolutioncontent {
   margin-top: 3vw;
   display: flex;
   justify-content: center;
 }
 
-#howweworkheading
-{
+#howweworkheading {
   margin: 2%;
   font-size: 60px;
   text-align: center;
   font-weight: lighter;
 }
 
-#howweworkpara 
-{
+#howweworkpara {
   font-size: 26px;
   text-align: center;
   margin: 0;
   padding-bottom: 2%;
 }
 
-#howweworkcontent
-{
+#howweworkcontent {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-#howweworkcontent img
-{
-  margin:2% 0 2% 0;
+#howweworkcontent img {
+  margin: 2% 0 2% 0;
   width: 60%;
 }
 
-
-
-
-#howweworkfooter
-{
+#howweworkfooter {
   margin: 2% 0 3% 0;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  #bannerimage {
+    padding-top: 25vw !important;
+  }
+
+  #oursolutionheading {
+    font-size: 3vw !important;
+    text-align: center !important;
+    position: relative !important;
+    left: 0 !important;
+    top: -17vw !important;
+    z-index: 10;
+  }
+
+  #homeandoursolution {
+    position: relative !important;
+    left: 0 !important;
+    top: -15vw !important;
+    font-size: 3vw !important;
+  }
+
+  #howweworkheading
+  {
+    font-size: 3vw !important;
+  }
+
+  #howweworkpara
+  {
+    font-size: 2vw !important;
+  }
 }

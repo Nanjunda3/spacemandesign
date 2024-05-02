@@ -1,0 +1,47 @@
+[
+  {
+    "img": "../assets/images/corporatecontent.png",
+    "content": "Corporate & MNC",
+    "list1": "Custom solutions reflecting brand identity and culture.",
+    "list2": "Designs optimize space and foster collaboration.",
+    "list3": "Spaces exude professionalism and brand essence.",
+    "list4": "Inspiring designs fuel creativity and innovation.",
+    "list5": "Services contribute to organizational success and values."
+  },
+  {
+    "img": "../assets/images/corporatecontent.png",
+    "content": "Cafe & Restaurants",
+    "list1": "Tailored for hotels, restaurants, and cafes.",
+    "list2": "Unique environments reflecting brand essence.",
+    "list3": " Attention to layout, furniture, lighting, and decor.",
+    "list4": " Seamless execution from idea to finished space.",
+    "list5": " Captivating designs for memorable experiences."
+  },
+  {
+    "img": "../assets/images/corporatecontent.png",
+    "content": "Hospitals and Clinics",
+    "list1": "Specialized services for hospitals and clinics.",
+    "list2": "Spaces promote wellness, tranquility, and efficiency.",
+    "list3": "Layouts prioritize flow, infection control, and accessibility.",
+    "list4": " Incorporating natural light and calming colors",
+    "list5": "Creating healing environments for enhanced patient."
+  },
+  {
+    "img": "../assets/images/corporatecontent.png",
+    "content": "Schools & Collages",
+    "list1": "Tailored services for schools and institutions.",
+    "list2": "Designs facilitate education, collaboration, and growth.",
+    "list3": "Close collaboration with educators and stakeholders.",
+    "list4": "Safe, pleasing environments supporting diverse learning.",
+    "list5": "Layouts promoting creativity and academic excellence."
+  },
+  {
+    "img": "../assets/images/corporatecontent.png",
+    "content": "Home Interior",
+    "list1": "planned layouts to make the most of every inch.",
+    "list2": "Thoughtful designs for cozy and inviting living spaces.",
+    "list3": "Visualize your dream home with lifelike 3D tours.",
+    "list4": "Timely completion for minimal disruption.",
+    "list5": "Cost-effective designs without compromising quality."
+  }
+]

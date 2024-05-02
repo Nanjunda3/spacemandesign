@@ -245,6 +245,11 @@ html {
   width: 95%;
 }
 
+#cardfunctionality
+{
+  display: grid;
+}
+
 #card {
   background: linear-gradient(to bottom right, #fff, #d4e0e6);
   padding-top: 30px;
@@ -263,23 +268,35 @@ html {
 #cardbuttons {
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 80vw;
+  justify-self: center;
 }
 #cardbuttons button {
   background-color: transparent;
   border: none;
+  width: 200px;
+}
+
+#cardbuttons img
+{
+  width: 100%;
 }
 
 #cardimages {
-  padding-top: 75px;
-  width: 100vw;
+  background-color: #073A4B;
+  color: white;
+  margin-top: 20px;
+  padding: 40px 20px 25px 20px;
+  width: 60vw;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-evenly; */
+  justify-self: center;
+  border-radius: 0 50px 0 50px;
+  font-size: 1.1vw;
+  line-height: normal;
+  gap: 6vw;
 }
 
-#cardimages img {
-  width: 93vw;
-}
 #testimonialparent {
   width: 100vw;
   display: flex;
@@ -306,13 +323,18 @@ html {
   gap: 20px;
   display: flex;
   justify-content: center;
-
   height: 60vh;
   width: 90vw;
 }
-#testimonialcontent img 
+#testimonialcontent div 
 {
-  height: 55vh;
+  background-color: #212121;
+  color: white;
+  height: 40vh;
+  width: 27%;
+  padding: 2vw 2vw;
+  font-size: 1.5vw;
+  border-radius: 2vw;
 }
 
 #consultation {

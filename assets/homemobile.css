@@ -154,12 +154,28 @@
     width: 20vw;
   }
 
+  #cardbuttons {
+    width: 100vw;
+  }
+
   #cardbuttons button img {
     width: 18vw;
   }
   #cardimages {
-    padding-top: 3vh;
+    border-radius: 0 20px 0 20px;
+    gap: 10vw;
+    width: 70vw;
+    padding: 3vw 2vw 3vw 2vw;
   }
+
+  #cardimagesimagediv {
+    width: 30%;
+  }
+
+  #cardimagesimagediv img {
+    width: 100%;
+  }
+
   #card {
     padding-top: 2ch;
     padding-bottom: 3vh;
@@ -171,9 +187,7 @@
   #cardcontent p {
     font-size: 2vw;
   }
-  #cardimages img {
-    width: 95vw;
-  }
+
   #testimonial {
     margin-top: 2vh;
   }
@@ -186,9 +200,10 @@
     justify-content: center;
     align-items: center;
   }
-  #testimonialcontent img {
+  #testimonialcontent div {
     width: 76vw;
     height: auto;
+    font-size: 2vw;
   }
 
   #locationandform {

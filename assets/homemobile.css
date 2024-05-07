@@ -13,6 +13,7 @@
     max-width: 30%;
     height: auto;
     left: 2vw;
+    top: 2vh;
   }
 
   #consultus {
@@ -301,8 +302,8 @@
 
   #navbar2 {
     display: block;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+    background-color: white;
+  
     overflow: hidden;
     position: fixed;
     top: 0;

@@ -1,14 +1,9 @@
 body {
   margin: 0;
   font-family: "Montserrat";
-}
-::-webkit-scrollbar {
-  display: none;
+  overflow-x: hidden;
 }
 
-html {
-  scrollbar-width: none;
-}
 
 #navbar2
 {
@@ -20,7 +15,7 @@ html {
   position: fixed;
   z-index: 3;
   left: 13vw;
-  top: 4vh;
+  top: 3.5vh;
 }
 
 
@@ -330,10 +325,10 @@ html {
 {
   background-color: #212121;
   color: white;
-  height: 40vh;
+  height: 30vh;
   width: 27%;
   padding: 2vw 2vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   border-radius: 2vw;
 }
 
@@ -349,7 +344,7 @@ html {
   width: 100%;
   margin-top: 7vh;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 
 }
 
@@ -363,19 +358,24 @@ html {
 }
 #footerlogo
 {
-  width: 60%;
+  width: 40%;
 }
 
 #contactinfo
 {
   display: flex;
   justify-content: center;
+  width: 40%;
+}
+
+#contactinfo img
+{
   width: 60%;
 }
 
 #icons
 {
-  width: 100%;
+  width: 40%;
   margin-top: 3rem;
   display: flex;
   justify-content: center;

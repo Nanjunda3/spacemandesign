@@ -8,10 +8,18 @@
 
 #oussolutioncontent {
   width: 100vw;
+  gap: 2vw;
 }
 
-#oussolutioncontent img {
+#oussolutioncontent div {
   width: 30%;
+  font-size: 2vw;
+
+}
+
+#oussolutioncontentdiv img
+{
+  width: 100%;
 }
 
 #howweworkfooter {
@@ -73,7 +81,7 @@
     position: relative !important;
     left: 0 !important;
     top: -17vw !important;
-    z-index: 10;
+    z-index: 2;
   }
 
   #homeandoursolution {

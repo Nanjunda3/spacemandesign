@@ -294,6 +294,7 @@
     height: 20px;
   }
   #contactimages {
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
   }

@@ -104,4 +104,4 @@ function scrollEventHandler() {
   }
 }
 
-window.addEventListener("scroll", scrollEventHandler);
+

@@ -81,14 +81,57 @@
     </script>
 
     <img id="logo" src="../assets/images/logo.png" alt="logo" />
+
     <div class="navbar">
-      <a href="/">Home</a>
+      <a href="/" style="color: #f5cc2a">Home</a>
       <a href="/solution">Our Solutions</a>
       <a href="">Blogs</a>
       <a href="/gallery">Gallery</a>
       <a href="/">About Us</a>
       <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
     </div>
+
+    <button
+      id="scrollToTopBtn"
+      style="
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        z-index: 999;
+        cursor: pointer;
+        display: none;
+      "
+    >
+      <img src="../assets/images/moveup.png" />
+    </button>
+
+    <script>
+      window.addEventListener("scroll", scrollEventHandler);
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      document
+        .getElementById("scrollToTopBtn")
+        .addEventListener("click", function () {
+          scrollToTop();
+        });
+
+      window.addEventListener("scroll", function () {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (window.scrollY >= 800) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+    </script>
 
     <div id="consultus">
       <div class="owl-carousel owl-theme" id="first-image-container">
@@ -365,21 +408,36 @@
         </div>
         <div id="cardimages">
           <div id="cardimagesimagediv">
-            <img src="../assets/images/corporatecontent.png" alt="no image" id="contentimage">
+            <img
+              src="../assets/images/corporatecontent.png"
+              alt="no image"
+              id="contentimage"
+            />
           </div>
 
           <div>
-
-            <h3 id="content" style="text-decoration: underline; margin: 0;">Corporate & MNC</h3>
-            <ul style="line-height: 3vw; padding: 0;">
-              <li id="list1">Custom solutions reflecting brand identity and culture.</li>
-              <li id="list2">Designs optimize space and foster collaboration.</li>
-              <li id="list3">Spaces exude professionalism and brand essence.</li>
-              <li id="list4">Inspiring designs fuel creativity and innovation.</li>
-              <li id="list5">Services contribute to organizational success and values.</li>
+            <h3 id="content" style="text-decoration: underline; margin: 0">
+              Corporate & MNC
+            </h3>
+            <ul style="line-height: 3vw; padding: 0">
+              <li id="list1">
+                Custom solutions reflecting brand identity and culture.
+              </li>
+              <li id="list2">
+                Designs optimize space and foster collaboration.
+              </li>
+              <li id="list3">
+                Spaces exude professionalism and brand essence.
+              </li>
+              <li id="list4">
+                Inspiring designs fuel creativity and innovation.
+              </li>
+              <li id="list5">
+                Services contribute to organizational success and values.
+              </li>
             </ul>
           </div>
-          </div>
+        </div>
       </div>
     </div>
 
@@ -445,15 +503,14 @@
         }
       }
 
-
       // Function to handle click event
       function handleClick(button) {
         buttons.forEach((btn, index) => {
           const img = btn.querySelector("img");
           if (btn === button) {
-            displayContent(index); 
+            displayContent(index);
             img.src = img.getAttribute("data-click-src");
-            // displayContent(index); 
+            // displayContent(index);
           } else {
             img.src = img.getAttribute("data-default-src");
           }
@@ -465,8 +522,6 @@
         clickedButton = button;
         button.removeEventListener("mouseleave", handleMouseLeave);
       }
-
-    
 
       // Add event listeners to each button
       buttons.forEach((button) => {
@@ -480,23 +535,38 @@
     </script>
     <div id="testimonialparent">
       <div id="testimonial">
-        <h3 style="font-weight: 550;">
-          Testimonials
-        </h3>
+        <h3 style="font-weight: 550">Testimonials</h3>
 
         <div id="testimonialcontent">
-    
           <div>
-            <p style="margin: 0;">Sannjay K S</p>
-            <p style="margin-top: 0;">Bengaluru</p>
-            <p>Exceptional service done by team! Working with Spaceman Designs was an absolute delight from start to finish. They took our vague ideas and turned them into a breathtaking reality.</p>
+            <p style="margin: 0">Sannjay K S</p>
+            <p style="margin-top: 0">Bengaluru</p>
+            <p>
+              Exceptional service done by team! Working with Spaceman Designs
+              was an absolute delight from start to finish. They took our vague
+              ideas and turned them into a breathtaking reality.
+            </p>
           </div>
-          <div><p style="margin: 0;">LakshmiKanth M P</p>
-            <p style="margin-top: 0;">Kolar</p>
-            <p>From the moment we contacted them, their team displayed unmatched professionalism and creativity. They listened attentively to our preferences and delivered a design that surpassed our wildest dreams.</p></div>
-          <div><p style="margin: 0;">Sai Nilesh</p>
-            <p style="margin-top: 0;">Bengaluru</p>
-            <p>Absolutely blown away by the talent and dedication of the team at Spaceman Designs! They took our outdated space and turned it into a modern masterpiece that perfectly reflects our style and personality.</p></div>
+          <div>
+            <p style="margin: 0">LakshmiKanth M P</p>
+            <p style="margin-top: 0">Kolar</p>
+            <p>
+              From the moment we contacted them, their team displayed unmatched
+              professionalism and creativity. They listened attentively to our
+              preferences and delivered a design that surpassed our wildest
+              dreams.
+            </p>
+          </div>
+          <div>
+            <p style="margin: 0">Sai Nilesh</p>
+            <p style="margin-top: 0">Bengaluru</p>
+            <p>
+              Absolutely blown away by the talent and dedication of the team at
+              Spaceman Designs! They took our outdated space and turned it into
+              a modern masterpiece that perfectly reflects our style and
+              personality.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -512,7 +582,9 @@
             Get in <span style="color: #f9d26c">Touch</span>
           </h3>
           <p style="padding-bottom: 20px; padding-left: 4%">
-            You can reach us by phone, email, or by filling out the contact form below. will do our best to respond to your inquiry as soon as possible.
+            You can reach us by phone, email, or by filling out the contact form
+            below. will do our best to respond to your inquiry as soon as
+            possible.
           </p>
           <form action="/sendMail" method="post" id="mapform">
             <input

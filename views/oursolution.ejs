@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/home.css" />
     <link rel="stylesheet" href="../assets/homemobile.css" />
     <link rel="stylesheet" href="../assets/contactus.css" />
-    <link rel="stylesheet" href="../assets/oursolution.css"/>
+    <link rel="stylesheet" href="../assets/oursolution.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -40,7 +40,7 @@
         <li><a href="/">Home</a></li>
         <li><a href="/solution">Our Solutions</a></li>
         <li><a href="">Blogs</a></li>
-        <li><a href="locationnav">Gallery</a></li>
+        <li><a href="/gallery">Gallery</a></li>
         <li><a href="/gallery">About Us</a></li>
         <li><a href="why-us">Contact Us</a></li>
       </ul>
@@ -60,51 +60,200 @@
     <img id="logo" src="../assets/images/logo.png" alt="logo" />
     <div class="navbar">
       <a href="/">Home</a>
-      <a href="/solution">Our Solutions</a>
+      <a href="/solution" style="color: #f5cc2a">Our Solutions</a>
       <a href="">Blogs</a>
       <a href="/gallery">Gallery</a>
       <a href="/">About Us</a>
       <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
     </div>
+
+    <button
+      id="scrollToTopBtn"
+      style="
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        z-index: 999;
+        cursor: pointer;
+        display: none;
+      "
+    >
+      <img src="../assets/images/moveup.png" />
+    </button>
+
+    <script>
+      window.addEventListener("scroll", scrollEventHandler);
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      document
+        .getElementById("scrollToTopBtn")
+        .addEventListener("click", function () {
+          scrollToTop();
+        });
+
+      window.addEventListener("scroll", function () {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (window.scrollY >= 800) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+    </script>
+
     <div id="bannerimage">
-      <img src="../assets/images/livingroom.png" alt="no banner" id="livingroomimage">
-      <h3 id="oursolutionheading" style="font-size: 48px; margin: 0; text-align: center; position: absolute; top: 17vw; left: 43vw;">Our Solution</h3>
-      <p id="homeandoursolution" style="text-align: center; position: absolute; top: 20vw; left: 34vw; margin: 0;"><a href="/" style="text-decoration: none; color: black;">Home</a> <span><img src="../assets/images/rightarrow.png" alt="no image" id="arrowimage">  </span> Our Solution</p>
+      <img
+        src="../assets/images/livingroom.png"
+        alt="no banner"
+        id="livingroomimage"
+      />
+      <h3
+        id="oursolutionheading"
+        style="
+          font-size: 48px;
+          margin: 0;
+          text-align: center;
+          position: absolute;
+          top: 17vw;
+          left: 43vw;
+        "
+      >
+        Our Solution
+      </h3>
+      <p
+        id="homeandoursolution"
+        style="
+          text-align: center;
+          position: absolute;
+          top: 20vw;
+          left: 34vw;
+          margin: 0;
+        "
+      >
+        <a href="/" style="text-decoration: none; color: black">Home</a>
+        <span
+          ><img
+            src="../assets/images/rightarrow.png"
+            alt="no image"
+            id="arrowimage"
+          />
+        </span>
+        Our Solution
+      </p>
+    </div>
+
+    <div id="oussolutioncontent">
+      <div id="oussolutioncontentdiv">
+        <img src="../assets/images/homeDecoration.png" alt="decoration" />
+        <h4 style="font-weight: bold; margin: 1vw; font-size: 1.8vw">
+          Home Decoration
+        </h4>
+        <p style="font-size: 1.2vw; margin: 1vw; color: #535659">
+          We offer classy home decorations items & furniture designed to make
+          your home look good.
+        </p>
+      </div>
+      <div id="oussolutioncontentdiv">
+        <img src="../assets/images/renovationIdeas.png" alt="decoration" />
+        <h4 style="font-weight: bold; margin: 1vw; font-size: 1.8vw">
+          Renovation Ideas
+        </h4>
+        <p style="font-size: 1.2vw; margin: 1vw; color: #535659">
+          Thinking of remodeling your home? Check out these ideas for home
+          renovations and remodeling from the home experts.
+        </p>
+      </div>
+      <div id="oussolutioncontentdiv">
+        <img src="../assets/images/lightingStyle.png" alt="decoration" />
+        <h4 style="font-weight: bold; margin: 1vw; font-size: 1.8vw">
+          Lighting Styles
+        </h4>
+        <p style="font-size: 1.2vw; margin: 1vw; color: #535659">
+          We are a specialist in lighting designed; offering a huge range of
+          Ceiling Lights, Pendant Lights, Floor Lamps & More!
+        </p>
+      </div>
+    </div>
+
+    <div id="howweworkmain">
+      <h3 id="howweworkheading">How We Work</h3>
+      <p id="howweworkpara">
+        It is a long established fact will be distracted.Lorem Ipsum is simply
+        <br />
+        dummy text of the printing and typesetting industry.
+      </p>
+      <div id="howweworkcontent">
+        <div id="howweworkcontentchild">
+       <div id="howweworkcontentchild1">
+        <img src="../assets/images/01.png">
+       </div>
+       <div id="howweworkcontentchild2">
+        <img src="../assets/images/011.png">
+        <h3>Concept & Details</h3>
+        <p>It is a long established fact  will be distracted.
+          Lorem Ipsum is simply dummy from text of the
+          and typesetting indufstry. </p>
+       </div>
       </div>
 
-      <div id="oussolutioncontent">
-        <div id="oussolutioncontentdiv">
-          <img src="../assets/images/homeDecoration.png"  alt="decoration"/>
-          <h4 style="font-weight: bold; margin: 1vw; font-size: 1.8vw;">Home Decoration</h4>
-          <p style=" font-size: 1.2vw; margin: 1vw; color: #535659;">We offer classy home decorations items & furniture designed to make your home look good.</p>
+      <div id="howweworkcontentchild">
+        <div id="howweworkcontentchild2">
+          <img src="../assets/images/022.png">
+          <h3>Concept & Details</h3>
+          <p>It is a long established fact  will be distracted.
+            Lorem Ipsum is simply dummy from text of the
+            and typesetting indufstry. </p>
+         </div>
+        <div id="howweworkcontentchild1">
+         <img src="../assets/images/02.png">
         </div>
-        <div id="oussolutioncontentdiv">
-          <img src="../assets/images/renovationIdeas.png"  alt="decoration"/>
-          <h4 style="font-weight: bold; margin: 1vw; font-size: 1.8vw;">Renovation Ideas</h4>
-          <p style=" font-size: 1.2vw; margin: 1vw; color: #535659;">Thinking of remodeling your home? Check out these ideas for home renovations and remodeling from the home experts.</p>
-        </div>
-        <div id="oussolutioncontentdiv">
-          <img src="../assets/images/lightingStyle.png"  alt="decoration"/>
-          <h4 style="font-weight: bold; margin: 1vw; font-size: 1.8vw;">Lighting Styles</h4>
-          <p style=" font-size: 1.2vw; margin: 1vw; color: #535659; ">We are a specialist in lighting designed; offering a huge range of Ceiling Lights, Pendant Lights, Floor Lamps & More!</p>
-        </div>
-      </div>
+       
+       </div>
 
-      <div id="howweworkmain">
-        <h3 id="howweworkheading">How We Work</h3>
-        <p id="howweworkpara">It is a long established fact  will be distracted.Lorem Ipsum is simply <br /> dummy text of the printing and typesetting industry.</p>
-        <div id="howweworkcontent">
-          <img src="../assets/images/01.png" alt="step one"/>
-          <img src="../assets/images/02.png" alt="step two"/>
-          <img src="../assets/images/03.png" alt="step three"/>
-          <img src="../assets/images/04.png" alt="step four"/>
+       <div id="howweworkcontentchild">
+        <div id="howweworkcontentchild1">
+         <img src="../assets/images/03.png">
         </div>
-        <div id="howweworkfooter">
-          <img src="../assets/images/howweworkfooter.png" alt="how we work footer"/>
+        <div id="howweworkcontentchild2">
+         <img src="../assets/images/033.png">
+         <h3>Concept & Details</h3>
+         <p>It is a long established fact  will be distracted.
+           Lorem Ipsum is simply dummy from text of the
+           and typesetting indufstry. </p>
         </div>
-      </div>
+       </div>
 
-      <a href="/contact"
+       <div id="howweworkcontentchild">
+        <div id="howweworkcontentchild2">
+          <img src="../assets/images/044.png">
+          <h3>Concept & Details</h3>
+          <p>It is a long established fact  will be distracted.
+            Lorem Ipsum is simply dummy from text of the
+            and typesetting indufstry. </p>
+         </div>
+        <div id="howweworkcontentchild1">
+         <img src="../assets/images/04.png">
+        </div>
+        
+       </div>
+      </div>
+      <div id="howweworkfooter">
+        <img
+          src="../assets/images/howweworkfooter.png"
+          alt="how we work footer"
+        />
+      </div>
+    </div>
+
+    <a href="/contact"
       ><div id="consultation">
         <img src="../assets/images/consultation.png" alt="Consultation Image" />
       </div>
@@ -140,6 +289,5 @@
         <img src="../assets/images/contactinfo.png" alt="Contact Info" />
       </div>
     </div>
-
   </body>
 </html>

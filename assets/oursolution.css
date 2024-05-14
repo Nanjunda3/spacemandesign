@@ -57,11 +57,34 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 2.5vw;
 }
 
-#howweworkcontent img {
-  margin: 2% 0 2% 0;
-  width: 60%;
+#howweworkcontentchild 
+{
+  width: 60vw;
+  display: flex;
+  gap: 3vw;
+}
+
+#howweworkcontentchild div h3 
+{
+  margin-top: 2vw;
+  font-size: 2.5vw;
+  font-weight: lighter;
+}
+
+#howweworkcontentchild div p
+{
+  font-size: 1.5vw;
+  font-weight: lighter;
+  margin: 0;
+}
+
+#howweworkcontentchild2 img
+{
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 #howweworkfooter {
@@ -99,5 +122,32 @@
   #howweworkpara
   {
     font-size: 2vw !important;
+  }
+
+  #howweworkcontentchild
+  {
+    justify-content: center;
+  }
+
+  #howweworkcontentchild1 
+  {
+    width: 40%;
+  }
+
+  #howweworkcontentchild1 img
+
+  {
+    width: 100%;
+  }
+
+  #howweworkcontentchild2 
+  {
+    width: 40%;
+  }
+
+  #howweworkcontentchild2 img
+
+  {
+    width: 100%;
   }
 }

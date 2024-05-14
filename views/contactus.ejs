@@ -9,10 +9,8 @@
     />
     <link rel="stylesheet" href="../assets/home.css" />
     <link rel="stylesheet" href="../assets/homemobile.css" />
+    <link rel="stylesheet" href="../assets/contactus.css" />
     <link
-      rel="stylesheet"
-      href="../assets/contactus.css"/>
-      <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
@@ -65,41 +63,139 @@
       <a href="">Blogs</a>
       <a href="/gallery">Gallery</a>
       <a href="#trying">About Us</a>
-      <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
+      <a href="/contact" class="rainbow-btn" style="background-color: #f5cc2a"
+        ><span>Contact Us</span></a
+      >
     </div>
 
-<div id="bannerimage">
-<img src="../assets/images/livingroom.png" alt="no banner">
-<h3 style="font-size: 48px; margin: 0; text-align: center; position: absolute; top: 17vw;left: 45vw;">Contact</h3>
-<p style="text-align: center; position: absolute; top: 20vw; left: 34vw; margin: 0;"><a href="/" style="text-decoration: none; color: black;">Home</a> <span><img src="../assets/images/rightarrow.png" alt="no image" id="arrowimage">  </span> Contact</p>
-</div>
+    <button
+      id="scrollToTopBtn"
+      style="
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        z-index: 999;
+        cursor: pointer;
+        display: none;
+      "
+    >
+      <img src="../assets/images/moveup.png" />
+    </button>
+
+    <script>
+      window.addEventListener("scroll", scrollEventHandler);
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      document
+        .getElementById("scrollToTopBtn")
+        .addEventListener("click", function () {
+          scrollToTop();
+        });
+
+      window.addEventListener("scroll", function () {
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (window.scrollY >= 800) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+    </script>
+
+    <div id="bannerimage">
+      <img src="../assets/images/livingroom.png" alt="no banner" />
+      <h3
+        style="
+          font-size: 48px;
+          margin: 0;
+          text-align: center;
+          position: absolute;
+          top: 17vw;
+          left: 45vw;
+        "
+      >
+        Contact
+      </h3>
+      <p
+        style="
+          text-align: center;
+          position: absolute;
+          top: 20vw;
+          left: 34vw;
+          margin: 0;
+        "
+      >
+        <a href="/" style="text-decoration: none; color: black">Home</a>
+        <span
+          ><img
+            src="../assets/images/rightarrow.png"
+            alt="no image"
+            id="arrowimage"
+          />
+        </span>
+        Contact
+      </p>
+    </div>
 
     <h3 id="contactusheading">Get In Touch With Us</h3>
-<p id="contactuscontent">For More Information About Our Product & Services. Please Feel Free To Drop Us<span><br></span> An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+    <p id="contactuscontent">
+      For More Information About Our Product & Services. Please Feel Free To
+      Drop Us<span><br /></span> An Email. Our Staff Always Be There To Help You
+      Out. Do Not Hesitate!
+    </p>
 
+    <div id="contactusmain">
+      <div id="contactusimages">
+        <img src="../assets/images/contactusaddress.png" alt="no address" />
+        <img src="../assets/images/contactusphone.png" alt="no address" />
+        <img src="../assets/images/contactusworking.png" alt="no address" />
+      </div>
 
-<div id="contactusmain">
-  <div id="contactusimages">
-  <img src="../assets/images/contactusaddress.png" alt="no address"/>
-  <img src="../assets/images/contactusphone.png" alt="no address"/>
-  <img src="../assets/images/contactusworking.png" alt="no address"/>
-  </div>
-  
-  <div id="contactusform">
-  <form id="contactusformcontent">
-   <label  for="name">Your Name</label><br/>
-   <input type="text" name="name" id="name" placeholder="Full Name" required/><br/>
-   <label  for="email">Email Address</label><br/>
-   <input type="email" name="email" id="email" placeholder="Abc@gmail.com" required/><br/>
-   <label  for="subject">Subject</label><br/>
-   <input type="text" name="subject" id="subject" placeholder="This is optional" /><br/>
-   <label  for="message">Message</label><br/>
-   <textarea rows="3" cols="5" id="message" placeholder="Hi! i'd like to ask about"></textarea><br/>
-   <input type="submit"  value="Submit" id="contactussubmit" />
-  </form>
-  </div>
-  
-  </div>
+      <div id="contactusform">
+        <form id="contactusformcontent">
+          <label for="name">Your Name</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            required
+          /><br />
+          <label for="email">Email Address</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Abc@gmail.com"
+            required
+          /><br />
+          <label for="subject">Subject</label><br />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="This is optional"
+          /><br />
+          <label for="message">Message</label><br />
+          <textarea
+            rows="3"
+            cols="5"
+            id="message"
+            placeholder="Hi! i'd like to ask about"
+          ></textarea
+          ><br />
+          <input type="submit" value="Submit" id="contactussubmit" />
+        </form>
+      </div>
+    </div>
 
     <div id="contactus">
       <div id="socialmedia">

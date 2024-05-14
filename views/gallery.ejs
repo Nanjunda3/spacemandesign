@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="../assets/home.css" />
     <link rel="stylesheet" href="../assets/homemobile.css" />
+    <link rel="stylesheet" href="../assets/gallery.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
@@ -44,85 +45,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.3/swiper-bundle.min.css"
     />
-    <style>
-      @keyframes sanjay {
-        0% {
-          transform: translateY(70px);
-          opacity: 0;
-        }
-
-        100% {
-          transform: translateY(0px);
-          opacity: 1;
-        }
-      }
-
-      .galleryimage {
-        padding-top: 200px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-      }
-
-      #gallery1 {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 30%;
-      }
-      #gallery1 img {
-        width: 100%;
-      }
-
-      #gallery2 {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 30%;
-      }
-      #gallery2 img {
-        width: 100%;
-      }
-
-      .galleryimage img {
-        opacity: 0;
-      }
-
-      .gallery01 {
-        opacity: 1 !important;
-      }
-
-      .gallery02 {
-        opacity: 1 !important;
-      }
-      #popupGallery {
-        position: fixed;
-        top: 1%;
-        left: 1%;
-      }
-
-      .swiper-container {
-        width: 100vw;
-        height: auto;
-      }
-
-      .swiper-wrapper {
-        width: 80vw;
-        height: 500px;
-      }
-
-      /* Center Swiper slides */
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
+    <style></style>
   </head>
+
   <body>
     <div id="navbar2">
       <div class="menu-toggle" id="mobile-menu">
@@ -134,7 +59,7 @@
         <li><a href="">Blogs</a></li>
         <li><a href="/gallery">Gallery</a></li>
         <li><a href="gallery">About Us</a></li>
-        <li><a href="why-us">Contact Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
       </ul>
     </div>
     <script>
@@ -234,9 +159,9 @@
         const gallery2Images = document.querySelectorAll(
           "#gallery2 img:not(.no-animate)"
         );
-        const scrollThresholds = [
-          0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000,
-        ];
+        // const scrollThresholds = [
+        //   0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000,
+        // ];
 
         function animateImages(images) {
           images.forEach((img) => {
@@ -244,9 +169,26 @@
           });
         }
 
+        function getScrollThresholds() {
+          const screenWidth = window.innerWidth;
+          if (screenWidth < 600) {
+            // Adjust thresholds for smaller screens
+            return [0, 100, 200, 300, 400, 500, 600, 700, 800];
+          }
+          else if (screenWidth > 600 && screenWidth < 1500)
+          {
+            return [0, 400, 600, 700, 950, 1000, 1150, 1260, 1300];
+          }
+          else {
+            // Default thresholds for larger screens
+            return [0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000];
+          }
+        }
+
         window.addEventListener("scroll", function () {
           const currentScrollPos = window.scrollY;
           console.log(currentScrollPos);
+          const scrollThresholds = getScrollThresholds();
           for (let i = 0; i < scrollThresholds.length; i++) {
             if (currentScrollPos >= scrollThresholds[i]) {
               animateImages([gallery1Images[i], gallery2Images[i]]);
@@ -256,8 +198,8 @@
       });
     </script>
 
-    <a href="/contact"
-      ><div id="consultation">
+    <a href="/contact">
+      <div id="consultation">
         <img src="../assets/images/consultation.png" alt="Consultation Image" />
       </div>
     </a>

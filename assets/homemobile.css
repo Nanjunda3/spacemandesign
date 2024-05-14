@@ -272,8 +272,8 @@
     justify-content: center;
   }
 
-  #facebooklogo {
-    height: 10vw;
+  #facebooklogo img {
+    width: 30% !important;
   }
 
   #consultation {
@@ -377,4 +377,12 @@
   #googlrating img {
     width: 28vw;
   }
+
+  #scrollToTopBtn img
+  {
+    width: 50%;
+    right: 1% !important;
+    bottom: 3% !important;
+  }
+
 }

@@ -1,19 +1,15 @@
-#bannerimage
-{
+#bannerimage {
   position: relative;
   padding-top: 200px;
   width: 100vw;
   height: auto;
 }
 
-#arrowimage
-{
+#arrowimage {
   width: 2%;
 }
 
-
-#contactusheading
-{
+#contactusheading {
   text-align: center;
   padding-top: 50px;
   margin: 0;
@@ -21,67 +17,107 @@
   font-weight: 600;
 }
 
-#contactuscontent
-{
+#contactuscontent {
   margin-top: 0.5vh;
   font-size: 22px;
   font-weight: lighter;
   text-align: center;
 }
 
-#contactusmain
-{
+#contactusmain {
   padding-top: 30px;
   display: flex;
   width: 100%;
-justify-content: center;
+  justify-content: center;
 }
 
-#contactusimages
-{
- 
+#contactusimages {
   height: 500px;
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: start;
 }
 
-#contactusimages img{
+#contactusimages img {
   width: 15vw;
 }
 
-#contactusformcontent
-{
+#contactusformcontent {
   display: flex;
   flex-direction: column;
-  
 }
 
-#contactusformcontent input 
-{
+#contactusformcontent input {
   width: 700px;
   height: 100px;
- border-radius: 10px;
- border: 1px solid black;
- font-size: 24px;
- padding-left: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 24px;
+  padding-left: 15px;
 }
 
-#message
-{
+#message {
   height: 160px !important;
-border: 1px solid black;
-border-radius: 10px;
-font-size: 24px;
-padding-left: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 24px;
+  padding-left: 15px;
 }
 
-#contactussubmit
-{
+#contactussubmit {
   width: 316px !important;
   height: 73px !important;
   border: none !important;
-  background-color: #FFD258;
+  background-color: #ffd258;
+}
+
+@media screen and (max-width: 1500px) {
+  #contactusheading {
+    padding-top: 0;
+    font-size: 3vw;
+  }
+  #contactuscontent {
+    font-size: 2vw;
+  }
+  #contactusmain
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #contactusformcontent input { 
+    max-width: 70vw;
+    height: 8vw;
+    font-size: 3vw;
+    padding-left: 10px;
+  }
+
+  #contactusformcontent label 
+  {
+    font-size: 3.5vw;
+  }
+
+  #message {
+    height: 100px !important;
+    font-size: 4vw;
+  }
+  #contactussubmit {
+    width: 150px !important;
+    height: 10vw !important;
+    font-size: 20px !important;
+  }
+
+  #contactusimages {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  #contactusimages img
+  {
+    width: 60%;
+  }
 }

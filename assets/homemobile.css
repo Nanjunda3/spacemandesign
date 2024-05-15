@@ -216,8 +216,7 @@
     height: 50vh;
   }
 
-  #formmain
-  {
+  #formmain {
     width: 100%;
   }
 
@@ -286,7 +285,6 @@
     transform: translate(-50%, -50%);
     width: 350px;
     height: 500px;
-   
   }
   #popupformsub {
     width: 330px;
@@ -310,7 +308,7 @@
   #navbar2 {
     display: block;
     background-color: white;
-  
+
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -354,6 +352,29 @@
     width: 35%;
   }
 
+  #contactinfo {
+    font-size: 3vw !important;
+  }
+
+  #pages {
+    width: 25% !important;
+  }
+
+  #pagescontact {
+    width: 65% !important;
+  }
+
+  #address {
+    width: 100% !important;
+  }
+
+  #copyright 
+  {
+    padding: 0 !important;
+    font-size: 2.5vw !important;
+    text-align: center !important;
+  }
+
   @media screen and (max-width: 1500px) {
     .nav-list {
       display: none;
@@ -378,11 +399,9 @@
     width: 28vw;
   }
 
-  #scrollToTopBtn img
-  {
+  #scrollToTopBtn img {
     width: 50%;
     right: 1% !important;
     bottom: 3% !important;
   }
-
 }

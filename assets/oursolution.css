@@ -17,8 +17,7 @@
 
 }
 
-#oussolutioncontentdiv img
-{
+#oussolutioncontentdiv img {
   width: 100%;
 }
 
@@ -60,37 +59,53 @@
   gap: 2.5vw;
 }
 
-#howweworkcontentchild 
-{
+#howweworkcontentchild {
   width: 60vw;
   display: flex;
   gap: 3vw;
 }
 
-#howweworkcontentchild div h3 
-{
+#howweworkcontentchild div h3 {
   margin-top: 2vw;
   font-size: 2.5vw;
   font-weight: lighter;
 }
 
-#howweworkcontentchild div p
-{
+#howweworkcontentchild div p {
   font-size: 1.5vw;
   font-weight: lighter;
   margin: 0;
 }
 
-#howweworkcontentchild2 img
-{
+#howweworkcontentchild2 img {
   margin-top: 2vw;
   margin-bottom: 2vw;
 }
 
 #howweworkfooter {
-  margin: 2% 0 3% 0;
+  margin: 2% 0 1% 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+#howweworkfooter1content p {
+  width: 300px;
+}
+
+#howweworkfooter1 {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+}
+
+#howweworkimage {
+  width: 20%;
+}
+
+#howweworkimage img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -114,40 +129,49 @@
     font-size: 3vw !important;
   }
 
-  #howweworkheading
-  {
+  #howweworkheading {
     font-size: 3vw !important;
   }
 
-  #howweworkpara
-  {
+  #howweworkpara {
     font-size: 2vw !important;
   }
 
-  #howweworkcontentchild
-  {
+  #howweworkcontentchild {
     justify-content: center;
   }
 
-  #howweworkcontentchild1 
-  {
+  #howweworkcontentchild1 {
     width: 40%;
   }
 
-  #howweworkcontentchild1 img
-
-  {
+  #howweworkcontentchild1 img {
     width: 100%;
   }
 
-  #howweworkcontentchild2 
-  {
+  #howweworkcontentchild2 {
     width: 40%;
   }
 
-  #howweworkcontentchild2 img
-
-  {
+  #howweworkcontentchild2 img {
     width: 100%;
+  }
+
+
+  #howweworkimage img {
+    width: 100%;
+  }
+
+  #howweworkfooter1content p {
+    width: 15vw;
+    font-size: 1vw;
+    padding-top: 0.5vw !important;
+  }
+
+  #howweworkfooter {
+    gap: 0;
+  }
+  #howweworkimage {
+    width: 15%;
   }
 }

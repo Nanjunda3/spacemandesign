@@ -277,7 +277,15 @@
 
   #consultation {
     margin-top: 2vh;
+    width: 98VW;
   }
+  #arrow 
+  {
+    width: 10VW;
+    border-radius: 1vw;
+  }
+
+
   #popupformmain {
     position: fixed;
     top: 50%;

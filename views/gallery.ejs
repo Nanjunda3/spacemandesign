@@ -1,91 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-    />
-    <link rel="stylesheet" href="../assets/home.css" />
-    <link rel="stylesheet" href="../assets/homemobile.css" />
-    <link rel="stylesheet" href="../assets/gallery.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="../assets/home.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
-    <title>Gallery</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.3/swiper-bundle.min.css"
-    />
-    <style></style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="../assets/home.css" />
+  <link rel="stylesheet" href="../assets/homemobile.css" />
+  <link rel="stylesheet" href="../assets/gallery.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-  <body>
-    <div id="navbar2">
-      <div class="menu-toggle" id="mobile-menu">
-        <img src="../assets/images/ham2.png" alt="no image" />
-      </div>
-      <ul class="nav-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/solution">Our Solutions</a></li>
-        <li><a href="">Blogs</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="gallery">About Us</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-      </ul>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="../assets/home.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.3/swiper-bundle.min.css" />
+  <style></style>
+</head>
+
+<body>
+  <div id="navbar2">
+    <div class="menu-toggle" id="mobile-menu">
+      <img src="../assets/images/ham2.png" alt="no image" />
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenuButton = document.getElementById("mobile-menu");
-        const navList = document.querySelector(".nav-list");
+    <ul class="nav-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/solution">Our Solutions</a></li>
+      <li><a href="">Blogs</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="gallery">About Us</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileMenuButton = document.getElementById("mobile-menu");
+      const navList = document.querySelector(".nav-list");
 
-        mobileMenuButton.addEventListener("click", function () {
-          navList.style.display =
-            navList.style.display === "block" ? "none" : "block";
-        });
+      mobileMenuButton.addEventListener("click", function () {
+        navList.style.display =
+          navList.style.display === "block" ? "none" : "block";
       });
-    </script>
+    });
+  </script>
 
-    <a href="/"><img id="logo" src="../assets/images/logo.png" alt="logo" /></a>
-    <div class="navbar">
-      <a href="/">Home</a>
-      <a href="/solution">Our Solutions</a>
-      <a href="">Blogs</a>
-      <a href="/gallery" style="color: #f5cc2a">Gallery</a>
-      <a href="/">About Us</a>
-      <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
-    </div>
-    <button
-      id="scrollToTopBtn"
-      style="
+  <a href="/"><img id="logo" src="../assets/images/logo.png" alt="logo" /></a>
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/solution">Our Solutions</a>
+    <a href="">Blogs</a>
+    <a href="/gallery" style="color: #f5cc2a">Gallery</a>
+    <a href="/">About Us</a>
+    <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
+  </div>
+  <button id="scrollToTopBtn" style="
         background-color: transparent;
         border: none;
         position: fixed;
@@ -94,162 +69,159 @@
         z-index: 999;
         cursor: pointer;
         display: none;
-      "
-    >
-      <img src="../assets/images/moveup.png" />
-    </button>
+      ">
+    <img src="../assets/images/moveup.png" />
+  </button>
 
-    <script>
-      window.addEventListener("scroll", scrollEventHandler);
+  <script>
+    window.addEventListener("scroll", scrollEventHandler);
 
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    document
+      .getElementById("scrollToTopBtn")
+      .addEventListener("click", function () {
+        scrollToTop();
+      });
+
+    window.addEventListener("scroll", function () {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (window.scrollY >= 800) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+  </script>
+
+  <div class="galleryimage">
+    <div id="gallery1">
+      <img src="/assets/gallery/gallery01.jpg" class="gallery01 no-animate" />
+      <img src="/assets/gallery/gallery03.jpg" class="gallery03" />
+      <img src="/assets/gallery/gallery05.jpg" class="gallery05" />
+      <img src="/assets/gallery/gallery07.jpg" class="gallery07" />
+      <img src="/assets/gallery/gallery09.jpg" class="gallery09" />
+      <img src="/assets/gallery/gallery19.jpg" class="gallery19" />
+      <img src="/assets/gallery/gallery11.jpg" class="gallery11" />
+      <img src="/assets/gallery/gallery13.jpg" class="gallery11" />
+      <img src="/assets/gallery/gallery15.jpg" class="gallery15" />
+      <img src="/assets/gallery/gallery17.jpg" class="gallery17" />
+    </div>
+    <div id="gallery2">
+      <img src="/assets/gallery/gallery02.jpg" class="gallery02 no-animate" />
+      <img src="/assets/gallery/gallery04.jpg" class="gallery04" />
+      <img src="/assets/gallery/gallery06.jpg" class="gallery06" />
+      <img src="/assets/gallery/gallery08.jpg" class="gallery08" />
+      <img src="/assets/gallery/gallery10.jpg" class="gallery10" />
+      <img src="/assets/gallery/gallery12.jpg" class="gallery12" />
+      <img src="/assets/gallery/gallery20.jpg" class="gallery20" />
+      <img src="/assets/gallery/gallery14.jpg" class="gallery14" />
+      <img src="/assets/gallery/gallery16.jpg" class="gallery16" />
+      <img src="/assets/gallery/gallery18.jpg" class="gallery18" />
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const gallery1Images = document.querySelectorAll(
+        "#gallery1 img:not(.no-animate)"
+      );
+      const gallery2Images = document.querySelectorAll(
+        "#gallery2 img:not(.no-animate)"
+      );
+      // const scrollThresholds = [
+      //   0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000,
+      // ];
+
+      function animateImages(images) {
+        images.forEach((img) => {
+          img.style.animation = "sanjay 2s forwards";
         });
       }
 
-      document
-        .getElementById("scrollToTopBtn")
-        .addEventListener("click", function () {
-          scrollToTop();
-        });
+      function getScrollThresholds() {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 600) {
+          // Adjust thresholds for smaller screens
+          return [0, 100, 200, 300, 400, 500, 600, 700, 800];
+        }
+        else if (screenWidth > 600 && screenWidth < 1500) {
+          return [0, 400, 600, 700, 950, 1000, 1150, 1260, 1300];
+        }
+        else {
+          // Default thresholds for larger screens
+          return [0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000];
+        }
+      }
 
       window.addEventListener("scroll", function () {
-        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-        if (window.scrollY >= 800) {
-          scrollToTopBtn.style.display = "block";
-        } else {
-          scrollToTopBtn.style.display = "none";
+        const currentScrollPos = window.scrollY;
+        console.log(currentScrollPos);
+        const scrollThresholds = getScrollThresholds();
+        for (let i = 0; i < scrollThresholds.length; i++) {
+          if (currentScrollPos >= scrollThresholds[i]) {
+            animateImages([gallery1Images[i], gallery2Images[i]]);
+          }
         }
       });
-    </script>
+    });
+  </script>
 
-    <div class="galleryimage">
-      <div id="gallery1">
-        <img src="/assets/gallery/gallery01.jpg" class="gallery01 no-animate" />
-        <img src="/assets/gallery/gallery03.jpg" class="gallery03" />
-        <img src="/assets/gallery/gallery05.jpg" class="gallery05" />
-        <img src="/assets/gallery/gallery07.jpg" class="gallery07" />
-        <img src="/assets/gallery/gallery09.jpg" class="gallery09" />
-        <img src="/assets/gallery/gallery19.jpg" class="gallery19" />
-        <img src="/assets/gallery/gallery11.jpg" class="gallery11" />
-        <img src="/assets/gallery/gallery13.jpg" class="gallery11" />
-        <img src="/assets/gallery/gallery15.jpg" class="gallery15" />
-        <img src="/assets/gallery/gallery17.jpg" class="gallery17" />
-      </div>
-      <div id="gallery2">
-        <img src="/assets/gallery/gallery02.jpg" class="gallery02 no-animate" />
-        <img src="/assets/gallery/gallery04.jpg" class="gallery04" />
-        <img src="/assets/gallery/gallery06.jpg" class="gallery06" />
-        <img src="/assets/gallery/gallery08.jpg" class="gallery08" />
-        <img src="/assets/gallery/gallery10.jpg" class="gallery10" />
-        <img src="/assets/gallery/gallery12.jpg" class="gallery12" />
-        <img src="/assets/gallery/gallery20.jpg" class="gallery20" />
-        <img src="/assets/gallery/gallery14.jpg" class="gallery14" />
-        <img src="/assets/gallery/gallery16.jpg" class="gallery16" />
-        <img src="/assets/gallery/gallery18.jpg" class="gallery18" />
+  <a href="/contact" style="text-decoration: none;" id="consultationmain">
+    <div id="consultation">
+      <p style="font-size: 2vw; margin: 0; font-weight: bold; margin: 0.5vw;">Do you have project to discuss ?</p>
+      <p style="font-size: 2vw; margin: 0; font-weight: bold; margin: 0.5vw;"> Get the Free Consultation </p>
+      <p style="font-size: 0.9vw; margin: 0; margin: 0.5vw;">It is a long established fact will be </p>
+      <p style="font-size: 0.9vw; margin: 0; margin: 0.5vw;">distracted.</p>
+      <button id="arrow">Contact Us &#8594</button>
+    </div>
+  </a>
+
+  <div id="contactus">
+    <div id="socialmedia">
+      <img id="footerlogo" src="../assets/images/logo.png" alt="Logo" />
+      <div id="icons">
+        <a id="facebooklogo" href="https://www.facebook.com/spacemandesignsofficial
+           " target="_blank">
+          <img src="../assets/images/facebook.png" alt="Facebook Icon" /></a>
+        <a href="">
+          <img src="../assets/images/twitter.png" alt="Twitter Icon" /></a>
+        <a href="https://www.linkedin.com/company/spaceman-designs/" target="_blank">
+          <img src="../assets/images/linkedin.png" alt="LinkedIn Icon" />
+        </a>
+        <a href="https://www.instagram.com/spacemandesigns6/" target="_blank">
+          <img src="../assets/images/instagram.png" alt="Instagram Icon" />
+        </a>
       </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const gallery1Images = document.querySelectorAll(
-          "#gallery1 img:not(.no-animate)"
-        );
-        const gallery2Images = document.querySelectorAll(
-          "#gallery2 img:not(.no-animate)"
-        );
-        // const scrollThresholds = [
-        //   0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000,
-        // ];
 
-        function animateImages(images) {
-          images.forEach((img) => {
-            img.style.animation = "sanjay 2s forwards";
-          });
-        }
-
-        function getScrollThresholds() {
-          const screenWidth = window.innerWidth;
-          if (screenWidth < 600) {
-            // Adjust thresholds for smaller screens
-            return [0, 100, 200, 300, 400, 500, 600, 700, 800];
-          }
-          else if (screenWidth > 600 && screenWidth < 1500)
-          {
-            return [0, 400, 600, 700, 950, 1000, 1150, 1260, 1300];
-          }
-          else {
-            // Default thresholds for larger screens
-            return [0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000];
-          }
-        }
-          
-        window.addEventListener("scroll", function () {
-          const currentScrollPos = window.scrollY;
-          console.log(currentScrollPos);
-          const scrollThresholds = getScrollThresholds();
-          for (let i = 0; i < scrollThresholds.length; i++) {
-            if (currentScrollPos >= scrollThresholds[i]) {
-              animateImages([gallery1Images[i], gallery2Images[i]]);
-            }
-          }
-        });
-      });
-    </script>
-
-    <a href="/contact">
-      <div id="consultation">
-        <img src="../assets/images/consultation.png" alt="Consultation Image" />
+    <div id="contactinfo">
+      <div style="width: 25%;" id="pages">
+        <p style="font-weight: bold;">Pages</p>
+        <p>About Us</p>
+        <p>Blogs</p>
+        <p><a href="/solution" style="text-decoration: none; color: black;">Our Solution</a></p>
+        <p><a href="/contact" style="text-decoration: none; color: black;">Contac Us</a></p>
+        <p><a href="/gallery" style="text-decoration: none; color: black;">Gallery</a></p>
       </div>
-    </a>
-
-    <div id="contactus">
-      <div id="socialmedia">
-        <img id="footerlogo" src="../assets/images/logo.png" alt="Logo" />
-        <div id="icons">
-          <a
-            id="facebooklogo"
-            href="https://www.facebook.com/spacemandesignsofficial
-           "
-            target="_blank"
-          >
-            <img src="../assets/images/facebook.png" alt="Facebook Icon"
-          /></a>
-          <a href="">
-            <img src="../assets/images/twitter.png" alt="Twitter Icon"
-          /></a>
-          <a
-            href="https://www.linkedin.com/company/spaceman-designs/"
-            target="_blank"
-          >
-            <img src="../assets/images/linkedin.png" alt="LinkedIn Icon" />
-          </a>
-          <a href="https://www.instagram.com/spacemandesigns6/" target="_blank">
-            <img src="../assets/images/instagram.png" alt="Instagram Icon" />
-          </a>
-        </div>
+      <div style="width: 50%;" id="pagescontact">
+        <p style="font-weight: bold;">Contact</p>
+        <p style="color: #880000; font-weight: bold;">Spaceman Designs.</p>
+        <p style="width: 80%;" id="address">#756, Raika Main Road, Opp Bharath Petroleum Kothanur Bengaluru-560077,
+          Karnataka, India.</p>
+        <p>Contact: <a href="tel:+918639468811" style="text-decoration: none; color: black;">(+91) 863-946-8811</a></p>
+        <p><a href="mailto:info@spacemandesigns.com" style="text-decoration: none; color: black;">Email I'd:
+            Info@spacemandesigns.com</a></p>
       </div>
-      
-        <div id="contactinfo">
-          <div style="width: 25%;" id="pages">
-           <p style="font-weight: bold;">Pages</p>
-           <p>About Us</p>
-           <p>Blogs</p>
-           <p><a href="/solution" style="text-decoration: none; color: black;">Our Solution</a></p>
-           <p><a href="/contact" style="text-decoration: none; color: black;">Contac Us</a></p>
-           <p><a href="/gallery" style="text-decoration: none; color: black;">Gallery</a></p>
-          </div>
-          <div style="width: 50%;" id="pagescontact">
-           <p style="font-weight: bold;">Contact</p>
-           <p style="color: #880000; font-weight: bold;">Spaceman Designs.</p>
-           <p style="width: 80%;" id="address">#756, Raika Main Road,  Opp Bharath Petroleum Kothanur Bengaluru-560077, Karnataka, India.</p>
-           <p>Contact: <a href="tel:+918639468811" style="text-decoration: none; color: black;">(+91) 863-946-8811</a></p>
-           <p><a href="mailto:info@spacemandesigns.com" style="text-decoration: none; color: black;">Email I'd: Info@spacemandesigns.com</a></p>
-          </div>
-         </div>
-      
     </div>
-    <p style="text-align: end; color: #979797; padding-right: 23.52%; font-size: 0.9vw;" id="copyright">Copyright &copy; 2024 Spaceman Designs. All Rights Reserved.</p>
-  </body>
+
+  </div>
+  <p style="text-align: end; color: #979797; padding-right: 23.52%; font-size: 0.9vw;" id="copyright">Copyright &copy;
+    2024 Spaceman Designs. All Rights Reserved.</p>
+</body>
+
 </html>

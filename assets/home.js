@@ -55,7 +55,8 @@ function handleClickOutside(event) {
 
 document.addEventListener("click", handleClickOutside);
 
-setInterval(displayPopupForm, 50000);
+setInterval(displayPopupForm, 30000);
+console.log('displaying');
 
 function startAnimation() {
   var images = document.querySelectorAll(".image, .image3, .image5");
@@ -88,7 +89,7 @@ function scrollEventHandler() {
     return;
   }
 
-  console.log(currentScrollPos);
+  // console.log(currentScrollPos);
 
   const scrollPositions = [
     {start: 800, end: 1000},

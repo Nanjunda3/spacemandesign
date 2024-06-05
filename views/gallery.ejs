@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../assets/home.css" />
   <link rel="stylesheet" href="../assets/homemobile.css" />
   <link rel="stylesheet" href="../assets/gallery.css" />
+  <link rel="stylesheet" href="../assets/contactus.css" />
+  <link rel="stylesheet" href="../assets/oursolution.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -16,6 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- <script src="../assets/home.js"></script> -->
@@ -35,7 +38,7 @@
       <li><a href="/solution">Our Solutions</a></li>
       <li><a href="">Blogs</a></li>
       <li><a href="/gallery">Gallery</a></li>
-      <li><a href="gallery">About Us</a></li>
+      <li><a href="/about">About Us</a></li>
       <li><a href="/contact">Contact Us</a></li>
     </ul>
   </div>
@@ -57,7 +60,7 @@
     <a href="/solution">Our Solutions</a>
     <a href="">Blogs</a>
     <a href="/gallery" style="color: #f5cc2a">Gallery</a>
-    <a href="/">About Us</a>
+    <a href="/about">About Us</a>
     <a href="/contact" class="rainbow-btn"><span>Contact Us</span></a>
   </div>
   <button id="scrollToTopBtn" style="
@@ -98,6 +101,35 @@
       }
     });
   </script>
+
+  <div id="bannerimage">
+    <img src="../assets/images/livingroom.png" alt="no banner" id="livingroomimage" />
+    <h3 id="oursolutionheading" style="
+      font-size: 48px;
+      margin: 0;
+      text-align: center;
+      position: absolute;
+      top: 17vw;
+      left: 44vw;
+    ">
+      Gallery
+    </h3>
+    <p id="homeandoursolution" style="
+      text-align: center;
+      position: absolute;
+      top: 20vw;
+      left: 32vw;
+      margin: 0;
+    ">
+      <a href="/" style="text-decoration: none; color: black">Home</a>
+      <span><img src="../assets/images/rightarrow.png" alt="no image" id="arrowimage" />
+      </span>
+      Gallery
+    </p>
+  </div>
+
+
+
 
   <div class="galleryimage">
     <div id="gallery1">
@@ -154,7 +186,7 @@
         }
         else {
           // Default thresholds for larger screens
-          return [0, 400, 700, 900, 1200, 1900, 2300, 2800, 3000];
+          return [430, 800, 1200, 1800, 2100, 2400, 2800, 3200, 3800];
         }
       }
 

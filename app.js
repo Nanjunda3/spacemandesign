@@ -58,7 +58,7 @@ server.listen (port ,()=>
 
 app.get ('/', (req,res)=>
 {
-  res.render('cheater')
+  res.render('home')
 })
 
 app.get ('/contact', (req, res)=>
